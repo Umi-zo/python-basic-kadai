@@ -1,17 +1,17 @@
 import random
 
-vars = random.randint(0,50)
+vars = random.randint(1,15)
 
 print(vars)
 
-if vars % 3 ==0:
+if vars % 3 == 0 and vars % 5 == 0:
+  print("FizzBuzz")
+
+elif vars % 3 == 0:
   print("Fizz")
 
-if vars % 5 ==0:
+elif vars % 5 == 0:
   print("Buzz")
-
-if vars % 3 ==0 and vars % 5 ==0:
-  print("FizzBuzz")
 
 else:
   print(vars)
